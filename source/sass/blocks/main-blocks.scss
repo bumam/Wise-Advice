@@ -1,0 +1,14 @@
+.main-blocks {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15.7rem;
+  flex-direction: column-reverse;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.main-blocks__block {
+  padding-bottom: 0;
+}

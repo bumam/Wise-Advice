@@ -1,0 +1,21 @@
+.main {
+  display: flex;
+  justify-content: center;
+
+}
+
+.main__header {
+  font-size: 3.4rem;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 3.5rem;
+}
+
+.main__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 89.5%;
+  padding-top: 5rem;
+
+}

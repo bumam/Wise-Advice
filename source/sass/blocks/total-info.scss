@@ -1,0 +1,35 @@
+.total-info {
+  display: flex;
+}
+
+.total-info__duration p {
+  margin: 0;
+  font-size: 1.4rem;
+  color: $light-color;
+}
+
+.total-info__duration {
+  width: 50%;
+}
+
+.total-info__days {
+  padding: 1rem 0;
+  font-size: 1.8rem;
+  color: #A6CF00;
+  font-weight: bold;
+
+  &--rest {
+    color: #ED4346;
+  }
+}
+
+.total-info__text {
+  width: 62.5%;
+  font-size: 1.4rem;
+}
+
+.total-info__table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

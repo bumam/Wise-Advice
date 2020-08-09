@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wise Ad</title>
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+<header class="header">
+  <div class="header__wrapper">
+    <nav class="header__nav main-nav">
+      <div class="main-nav__mini-wrapper main-nav__mini-wrapper--logo">
+        <a class="main-nav__logo" href="index.html" aria-label="Обновить главную страницу">
+          <img src="img/logo.png" width="147" height="47" alt="Республика" />
+        </a>
+        <div class="main-nav__menu-select">
+          <p class="main-nav__company-name">ООО «РЕСПУБЛИКА»</p>
+          <button class="main-nav__btn">
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="main-nav__mini-wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item ">
+            <a class="main-nav__link main-nav__link--name" href="#"><img src="img/Ellipse 6.png" width="32" height="32"
+                alt="Республика" />
+              Дмитрий Иванов</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--user" href="#"></a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--logout" href="#"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="main">
+  <div class="main__wrapper">
+    <h1 class="main__header">Отпуск или отгул</h1>
+    <div class="main-blocks">
+      <form class="main-blocks__block day-off-form">
+        <div class="day-off-form__big-wrapper">
+          <fieldset class="day-off-form__fieldset">
+            <label class="day-off-form__label" for="type">Что вы хотите взять?</label>
+            <select id="type" class="day-off-form__select" name="type">
+              <option value="vacation" selected>Оплачиваемый отпуск по графику</option>
+              <option value="free-day">Отгул</option>
+            </select>
+          </fieldset>
+          <fieldset class="day-off-form__fieldset">
+            <label class="day-off-form__label" for="schedule">Ближайший отпуск по графику</label>
+            <select id="schedule" class="day-off-form__select day-off-form__select--dates" name="schedule">
+              <option value="var1" selected>12.02 — 26.02 (10д)</option>
+              <option value="var2">04.02 - 04.010 (7д)</option>
+            </select>
+          </fieldset>
+          <fieldset class="day-off-form__calendar">
+            <p class="day-off-form__label">Даты отпуска</p>
+            <div class="day-off-form__dates calendar">
+              <p class="calendar__label">Начало</p>
+              <div class="calendar__wrapper">
+                <p class="calendar__data">21.03.2020</p><button class="calendar__btn"></button>
+              </div>
+            </div>
+            <div class="day-off-form__dates calendar">
+              <p class="calendar__label">Окончание</p>
+              <div class="calendar__wrapper">
+                <p class="calendar__data">21.03.2020</p><button class="calendar__btn"></button>
+              </div>
+            </div>
+          </fieldset>
+          <div class="day-off-form__total total-info">
+            <table class="total-info__table ">
+              <tr>
+                <td class="total-info__text">Продолжительность отпуска</td>
+                <td class="total-info__text">Будущий остаток дней отпуска</td>
+              </tr>
+              <tr>
+                <td class="total-info__days">10д</td>
+                <td class="total-info__days total-info__days--rest">-3д</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="day-off-form__wrapper comment-area">
+            <h2 class="comment-area__header">
+              Комментарий
+            </h2>
+            <div class="comment-area__area">
+              <textarea class="comment-area__text" rows="10" cols="45" name="text"
+                placeholder="Ваш комментарий (не обязательно)"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <input class="day-off-form__btn" type="submit" value="Отправить заявку">
+      </form>
+      <div class="main-blocks__block opportunity">
+        <div class="opportunity__wrapper">
+          <div class="opportunity__mini-wrapper">
+            <p class="opportunity__header">Доступные дни отпуска на 12.02.2020</p>
+            <p class="opportunity__rest opportunity__rest--vacation">7д</p>
+          </div>
+          <div class="opportunity__mini-wrapper">
+            <p class="opportunity__header">Доступные отгулы</p>
+            <p class="opportunity__rest opportunity__rest--free-day">0д</p>
+          </div>
+        </div>
+        <p class="opportunity__text">С учетом уже согласованных заявок</p>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer__wrapper">
+    <a class="footer__block" href="#"><img src="img/wa_logo.png" width="148" height="38" alt="WA logo"></a>
+    <p class="footer__block">Аутсорсинг<br> учетных функций</p>
+  </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+.main-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-family: "Open Sans", "Arial", sans-serif;
+  flex-direction: column;
+
+  @media (min-width: $mobile-width) {
+    flex-direction: row;
+  }
+}
+
+.main-nav__company-name {
+  font-size: 1.5rem;
+}
+
+.main-nav__mini-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 2.4rem;
+  background-color: white;
+}
+
+.main-nav__mini-wrapper--logo {
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+
+.main-nav__list {
+  height: 100%;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: auto;
+
+  @media (min-width: $mobile-width) {
+    margin: 0;
+  }
+}
+
+.main-nav__btn {
+  background-color: white;
+  border: none;
+  width: 10rem;
+  height: 5rem;
+  display: flex;
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.main-nav__btn span {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 36px;
+  transform: rotate(-48deg) translate(-1.5rem, 3rem);
+  border-left: 2px solid #3880FF;
+  border-bottom: 2px solid #3880FF;
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(-48deg) translateX(1.4rem);
+  }
+}
+
+.main-nav__menu-select {
+  padding: 0 3.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav__menu-select::before {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 22px;
+    background: #ECECEC;
+    transform: translate(-2rem, 1rem);
+  }
+}
+
+.main-nav__item {
+
+  border-left: 1px solid #ECECEC;
+  align-items: center;
+  display: flex;
+}
+
+.main-nav__item:last-child {
+  padding-right: 0;
+}
+
+
+
+.main-nav__link {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-repeat: no-repeat;
+
+  &--user {
+    width: 1.6rem;
+    height: 1.6rem;
+    background-size: 1.6rem 1.6rem;
+    background-position: center;
+    background-image: url("../img/user.png");
+  }
+
+  &--logout {
+    width: 1.7rem;
+    height: 1.6rem;
+    background-size: 1.7rem 1.6rem;
+    background-position: center;
+
+    background-image: url("../img/log_out.png");
+  }
+
+  &--name {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    padding-right: 2.7rem;
+  }
+
+  &--name img {
+    padding: 0 1.4rem;
+  }
+}
+
+.main-nav__logo {
+  padding-right: 1rem;
+}
